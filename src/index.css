@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.react-grid-layout .react-grid-item {
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+html, body {
+  font-size: 80%;
+  transform: none !important;
+}
+
+.alignment-highlight {
+  position: relative;
+  z-index: 1;
+}
+.alignment-highlight::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  box-shadow: 0 0 0 1.5px #000000;
+  border-radius: 0.25rem;
+}
+
